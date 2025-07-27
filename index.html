@@ -1,55 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0f172a" />
-  <title>Abdulloev Company</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-white font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulloev Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
 
-  <header class="text-center py-10 border-b border-gray-700">
-    <h1 class="text-4xl font-bold text-indigo-400">Abdulloev Company</h1>
-    <p class="mt-2 text-lg text-gray-300">Building the future. Web, Mobile Apps, Telegram Bots.</p>
-  </header>
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-700 bg-gray-950">
+      <h1 class="text-2xl font-bold text-indigo-400">Abdulloev Company</h1>
+      <ul class="flex space-x-6 text-gray-300 text-sm">
+        <li><a href="#about" class="hover:text-white">About</a></li>
+        <li><a href="#services" class="hover:text-white">Services</a></li>
+        <li><a href="#projects" class="hover:text-white">Projects</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+      </ul>
+    </nav>
 
-  <main class="max-w-4xl mx-auto px-4 py-12">
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-indigo-300">About Us</h2>
+    <!-- Hero Section -->
+    <section class="text-center py-16 px-6">
+      <h2 class="text-4xl font-bold text-white mb-4">We Build Digital Experiences</h2>
+      <p class="text-gray-400 max-w-xl mx-auto">Abdulloev Company is a modern tech studio creating websites, mobile apps, and automation systems to move businesses forward.</p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-5xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">About Us</h3>
       <p class="text-gray-300 leading-relaxed">
-        Abdulloev Company is a creative team of developers and innovators based in Tajikistan. 
-        We build modern solutions for businesses — from responsive websites and mobile apps to 
-        automation tools and educational platforms.
+        Based in Tajikistan, Abdulloev Company is an independent digital development company focused on delivering high-quality solutions with care, speed, and a modern approach.
       </p>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-indigo-300">Our Services</h2>
-      <ul class="space-y-2 text-gray-300 list-disc list-inside">
-        <li>Web Development (React, Next.js, NestJS)</li>
-        <li>Mobile Apps (React Native, Expo)</li>
-        <li>Telegram Bots & Automation</li>
-        <li>Online Educational Platforms</li>
-        <li>UI/UX Design</li>
+    <!-- Services -->
+    <section id="services" class="bg-gray-800 py-12 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-semibold text-indigo-300 mb-6">Our Services</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-gray-300">
+          <div class="p-4 bg-gray-900 rounded-xl shadow">
+            <h4 class="font-bold text-lg mb-2">Web Development</h4>
+            <p>Fast, secure, responsive websites using React, Next.js and modern stacks.</p>
+          </div>
+          <div class="p-4 bg-gray-900 rounded-xl shadow">
+            <h4 class="font-bold text-lg mb-2">Mobile Apps</h4>
+            <p>Cross-platform apps with React Native for Android & iOS.</p>
+          </div>
+          <div class="p-4 bg-gray-900 rounded-xl shadow">
+            <h4 class="font-bold text-lg mb-2">Telegram Bots</h4>
+            <p>Automation, e-commerce, notifications — all inside Telegram.</p>
+          </div>
+          <div class="p-4 bg-gray-900 rounded-xl shadow">
+            <h4 class="font-bold text-lg mb-2">UI/UX Design</h4>
+            <p>User-friendly and brand-consistent interfaces for web & mobile.</p>
+          </div>
+          <div class="p-4 bg-gray-900 rounded-xl shadow">
+            <h4 class="font-bold text-lg mb-2">Education Platforms</h4>
+            <p>Online learning experiences tailored for Tajikistan and beyond.</p>
+          </div>
+          <div class="p-4 bg-gray-900 rounded-xl shadow">
+            <h4 class="font-bold text-lg mb-2">Custom Solutions</h4>
+            <p>We create unique tools, APIs, and integrations for your business needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">Featured Projects</h3>
+      <ul class="text-gray-300 space-y-4">
+        <li>
+          <strong>ZoodBar</strong> — A delivery platform with real-time tracking and mobile interface.
+        </li>
+        <li>
+          <strong>TojikOn App</strong> — Educational platform based on the book "Tojikон" by Bobojon Ghafurov.
+        </li>
+        <li>
+          <strong>FinanceHub</strong> — Personal finance tools and dashboards.
+        </li>
       </ul>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-indigo-300">Contact</h2>
-      <p class="text-gray-300">Telegram Bot: <a href="https://t.me/abdulloevcompanybot" class="text-indigo-400 underline">@abdulloevcompanybot</a></p>
-      <p class="text-gray-300">Email: <a href="mailto:abdulloevcompany@gmail.com" class="text-indigo-400 underline">abdulloevcompany@gmail.com</a></p>
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-800 py-12 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-semibold text-indigo-300 mb-6">Get in Touch</h3>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 text-gray-300">
+          <div class="flex items-center space-x-2">
+            <i data-feather="mail"></i>
+            <a href="mailto:abdulloevcompany@gmail.com" class="hover:text-white">abdulloevcompany@gmail.com</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i data-feather="send"></i>
+            <a href="https://t.me/abdulloevcompanybot" class="hover:text-white">@abdulloevcompanybot</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i data-feather="github"></i>
+            <a href="https://github.com/abdulloevcompany" class="hover:text-white">GitHub</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="text-center mt-16">
-      <a href="https://github.com/abdulloevcompany" target="_blank" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-6 rounded-full transition">
-        Visit Our GitHub
-      </a>
-    </section>
-  </main>
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 py-6 border-t border-gray-800 text-sm">
+      © <span id="year"></span> Abdulloev Company. All rights reserved.
+    </footer>
 
-  <footer class="text-center text-gray-600 py-6 text-sm border-t border-gray-800">
-    © 2025 Abdulloev Company. All rights reserved.
-  </footer>
-</body>
+    <script>
+      feather.replace();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
