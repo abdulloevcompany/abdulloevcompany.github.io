@@ -1,0 +1,23 @@
+name: Telegram Notify All Pushes
+
+on: 
+  push:  # реагирует на любой push
+    branches:
+      - '**'  # любые ветки
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Telegram Notification
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            📌 Новый PUSH:
+            👤 Автор: ${{ github.actor }}
+            📂 Репозиторий: ${{ github.repository }}
+            🌿 Ветка: ${{ github.ref_name }}
+            💬 Комментарий: ${{ github.event.head_commit.message }}
+            🔗 Commit: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
